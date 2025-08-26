@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farid Gnankambary - Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio de Farid Gnankambary - Data Scientist et ML Engineer spécialisé en IA et machine learning">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">FG_portfolio.exe</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-fr="./about" data-en="./about">./about</a></li>
+                <li><a href="#skills" data-fr="./skills" data-en="./skills">./skills</a></li>
+                <li><a href="#experience" data-fr="./experience" data-en="./experience">./experience</a></li>
+                <li><a href="#projects" data-fr="./projects" data-en="./projects">./projects</a></li>
+                <li><a href="#contact" data-fr="./contact" data-en="./contact">./contact</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLanguage('fr')">FR</button>
+                <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="lang-content active" data-lang="fr">
+                <div class="hero-prefix">$ whoami</div>
+                <h1 class="hero-title">Farid_Gnankambary</h1>
+                <h2 class="hero-subtitle">Data_Scientist && ML_Engineer</h2>
+                <p class="hero-description">
+                    // Spécialisé en IA et data science<br>
+                    // Expertise: ML, NLP, MLOps, Deep Learning<br>
+                    // Mission: Transformer les données en solutions intelligentes
+                </p>
+            </div>
+            <div class="lang-content" data-lang="en">
+                <div class="hero-prefix">$ whoami</div>
+                <h1 class="hero-title">Farid_Gnankambary</h1>
+                <h2 class="hero-subtitle">Data_Scientist && ML_Engineer</h2>
+                <p class="hero-description">
+                    // Specialized in AI and data science<br>
+                    // Expertise: ML, NLP, MLOps, Deep Learning<br>
+                    // Mission: Transform data into intelligent solutions
+                </p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-terminal"></i>
+                    <span data-fr="./contact --now" data-en="./contact --now">./contact --now</span>
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-code"></i>
+                    <span data-fr="ls ./projects" data-en="ls ./projects">ls ./projects</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in" data-fr="about_me.md" data-en="about_me.md">about_me.md</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <div class="lang-content active" data-lang="fr">
+                        <p>
+                            Data Scientist passionné par l'IA et l'innovation technologique. Diplômé de CY Tech 
+                            avec une expertise en mathématiques appliquées et une spécialisation en Intelligence Artificielle.
+                        </p>
+                        <p>
+                            Mon parcours combine recherche académique et applications industrielles, avec un focus 
+                            sur les modèles de langage, l'IA multimodale et l'interaction homme-machine. 
+                            Je développe des systèmes intelligents qui transforment les données en valeur business.
+                        </p>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <p>
+                            Data Scientist passionate about AI and technological innovation. Graduate from CY Tech 
+                            with expertise in applied mathematics and a specialization in Artificial Intelligence.
+                        </p>
+                        <p>
+                            My journey combines academic research and industrial applications, with a focus 
+                            on language models, multimodal AI and human-computer interaction. 
+                            I develop intelligent systems that transform data into business value.
+                        </p>
+                    </div>
+                </div>
+                <div class="code-block fade-in">
+                    <div class="lang-content active" data-lang="fr">
+                        <div class="code-line"><span class="code-comment"># Profil</span></div>
+                        <div class="code-line"><span class="code-keyword">class</span> <span class="code-function">DataScientist</span>:</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="code-string">"Farid Gnankambary"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="code-string">"ML Engineer"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.languages = [<span class="code-string">"French"</span>, <span class="code-string">"English"</span>]</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.experience = <span class="code-string">"2+ years"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.location = <span class="code-string">"Île-de-France"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="code-string">"AI Innovation"</span></div>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <div class="code-line"><span class="code-comment"># Profile</span></div>
+                        <div class="code-line"><span class="code-keyword">class</span> <span class="code-function">DataScientist</span>:</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="code-string">"Farid Gnankambary"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="code-string">"ML Engineer"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.languages = [<span class="code-string">"French"</span>, <span class="code-string">"English"</span>]</div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.experience = <span class="code-string">"2+ years"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.location = <span class="code-string">"Île-de-France"</span></div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="code-string">"AI Innovation"</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-fr="skills.json" data-en="skills.json">skills.json</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skill-title">Machine Learning</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Supervised/Unsupervised Learning</li>
+                        <li class="skill-item">Deep Learning & Neural Networks</li>
+                        <li class="skill-item">Natural Language Processing</li>
+                        <li class="skill-item">Computer Vision</li>
+                        <li class="skill-item">Generative AI & LLMs</li>
+                        <li class="skill-item">Reinforcement Learning</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title" data-fr="Programmation" data-en="Programming">Programmation</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Python (Expert)</li>
+                        <li class="skill-item">R & SQL</li>
+                        <li class="skill-item">Java & C</li>
+                        <li class="skill-item">MATLAB</li>
+                        <li class="skill-item">Git & Version Control</li>
+                        <li class="skill-item">Linux/Unix</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="skill-title">Frameworks & Tools</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">TensorFlow & PyTorch</li>
+                        <li class="skill-item">Scikit-learn & Numpy</li>
+                        <li class="skill-item">HuggingFace Transformers</li>
+                        <li class="skill-item">LangChain & RAG</li>
+                        <li class="skill-item">Pandas & Data Processing</li>
+                        <li class="skill-item">Matplotlib & Visualization</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="skill-title">MLOps & Cloud</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">Docker & Containerization</li>
+                        <li class="skill-item">Kubernetes Orchestration</li>
+                        <li class="skill-item">Microsoft Azure</li>
+                        <li class="skill-item">CI/CD Pipelines</li>
+                        <li class="skill-item">API Development (REST)</li>
+                        <li class="skill-item">Model Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in" data-fr="experience.log" data-en="experience.log">experience.log</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2023 - Nov 2024</div>
+                        <h3 class="timeline-title" data-fr="Junior Data Scientist - Alternant" data-en="Junior Data Scientist - Apprentice">Junior Data Scientist - Alternant</h3>
+                        <div class="timeline-company">Sogeti - Groupe Capgemini</div>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="timeline-description">
+                                • Développement système RAG conversationnel avec LLMs (Langchain, LLaMA-3)<br>
+                                • Optimisation modèles ML avec métriques fairness et statistical parity<br>
+                                • Pipeline données Azure avec Elasticsearch et résolution cold start<br>
+                                • Évaluation comparative Content-based vs RAG approaches
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="timeline-description">
+                                • Developed conversational RAG system with LLMs (Langchain, LLaMA-3)<br>
+                                • ML model optimization with fairness and statistical parity metrics<br>
+                                • Azure data pipeline with Elasticsearch and cold start resolution<br>
+                                • Comparative evaluation of Content-based vs RAG approaches
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2023 - Sep 2023</div>
+                        <h3 class="timeline-title" data-fr="Ingénieur IA - Stagiaire" data-en="AI Engineer - Intern">Ingénieur IA - Stagiaire</h3>
+                        <div class="timeline-company">OUIcoding</div>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="timeline-description">
+                                • Système inspection visuelle CNN (96% précision) pour production industrielle<br>
+                                • Optimisation SEO web via NLP avancé (POS tagging, NER)<br>
+                                • Analyse données e-commerce et modèles prédictifs KPIs<br>
+                                • Web scraping, APIs et intégration Google Cloud
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="timeline-description">
+                                • CNN visual inspection system (96% accuracy) for industrial production<br>
+                                • Web SEO optimization via advanced NLP (POS tagging, NER)<br>
+                                • E-commerce data analysis and predictive KPI models<br>
+                                • Web scraping, APIs and Google Cloud integration
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-fr="projects/" data-en="projects/">projects/</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Conversational RAG System</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Système de recommandation conversationnel utilisant RAG avec LLMs. 
+                                Architecture modulaire avec Langchain, LLaMA-3 et Sentence Transformers 
+                                pour des recommandations d'emploi personnalisées.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Conversational recommendation system using RAG with LLMs. 
+                                Modular architecture with Langchain, LLaMA-3 and Sentence Transformers 
+                                for personalized job recommendations.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">LLaMA-3</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">BERT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-fr="IA Générative - Image Annotation" data-en="Generative AI - Image Annotation">IA Générative - Image Annotation</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Système image-to-text combinant EfficientNet pour l'extraction de features 
+                                et Transformer Decoder pour la génération automatique de descriptions contextuelles.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Image-to-text system combining EfficientNet for feature extraction 
+                                and Transformer Decoder for automatic contextual description generation.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">EfficientNet</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">YouTube Video Summarizer</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Fine-tuning Transformer Decoder pour résumés vidéos longues. 
+                                Score ROUGE-L 0.65 sur CNN/DailyMail avec traitement contextes 10k+ tokens.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Transformer Decoder fine-tuning for long video summaries. 
+                                ROUGE-L score 0.65 on CNN/DailyMail with 10k+ token context processing.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Longformer</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Fine-tuning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-fr="LLM Decision System" data-en="LLM Decision System">LLM Decision System</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Chain-of-Thought + QLoRA fine-tuning Mistral-7B pour évaluation automatique 
+                                réponses étudiants. 86% accord avec correcteurs humains.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Chain-of-Thought + QLoRA fine-tuning Mistral-7B for automatic student response evaluation. 
+                                86% agreement with human evaluators.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Mistral-7B</span>
+                            <span class="tech-tag">QLoRA</span>
+                            <span class="tech-tag">Chain-of-Thought</span>
+                            <span class="tech-tag">Education</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Attack Detection</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Classification attaques réseau cybersécurité via CNN+LSTM. 
+                                F1-score 0.94 post-SMOTE sur datasets déséquilibrés.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Network attack classification for cybersecurity via CNN+LSTM. 
+                                F1-score 0.94 post-SMOTE on imbalanced datasets.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-fr="Industrial Vision System" data-en="Industrial Vision System">Industrial Vision System</h3>
+                        <div class="lang-content active" data-lang="fr">
+                            <p class="project-description">
+                                Transfer learning CNN pour inspection visuelle temps-réel production industrielle. 
+                                96%+ précision détection défauts avec réduction downtime.
+                            </p>
+                        </div>
+                        <div class="lang-content" data-lang="en">
+                            <p class="project-description">
+                                Transfer learning CNN for real-time visual inspection in industrial production. 
+                                96%+ accuracy defect detection with downtime reduction.
+                            </p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Transfer Learning</span>
+                            <span class="tech-tag">Industry 4.0</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/faridgnank02" class="project-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in" data-fr="contact.sh" data-en="contact.sh">contact.sh</h2>
+            <div class="contact-grid">
+                <div class="contact-terminal fade-in">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-button close"></div>
+                            <div class="terminal-button minimize"></div>
+                            <div class="terminal-button maximize"></div>
+                        </div>
+                        <div class="terminal-title" data-fr="contact_info.json" data-en="contact_info.json">contact_info.json</div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">farid@portfolio:~$</span> cat contact.json
+                        </div>
+                        <div class="terminal-line">{</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"name": "Farid Gnankambary",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"email": "gnankambar@cy-tech.fr",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"phone": "+33(0)785472387",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"location": "Île-de-France, France",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"github": "faridgnank02",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"linkedin": "farid-gnankambary",</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"languages": ["French", "English"],</div>
+                        <div class="terminal-line">&nbsp;&nbsp;"status": "available_for_opportunities"</div>
+                        <div class="terminal-line">}</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">farid@portfolio:~$</span> <span class="cursor">█</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <div class="terminal-button close"></div>
+                                <div class="terminal-button minimize"></div>
+                                <div class="terminal-button maximize"></div>
+                            </div>
+                            <div class="terminal-title" data-fr="send_message.py" data-en="send_message.py">send_message.py</div>
+                        </div>
+                        <form onsubmit="handleFormSubmit(event)" style="padding: 2rem;">
+                            <div class="form-group">
+                                <label for="name" data-fr="# Votre nom" data-en="# Your name"># Votre nom</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"># Email address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-fr="# Sujet du message" data-en="# Message subject"># Sujet du message</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Opportunité ML Engineer">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-fr="# Votre message" data-en="# Your message"># Votre message</label>
+                                <textarea id="message" name="message" required placeholder="Bonjour Farid, je suis intéressé par..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-terminal"></i>
+                                <span data-fr="./send --message" data-en="./send --message">./send --message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/faridgnank02" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:gnankambar@cy-tech.fr" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p data-fr="© 2024 Farid Gnankambary - Développé avec passion et caféine" data-en="© 2024 Farid Gnankambary - Built with passion and caffeine">© 2024 Farid Gnankambary - Développé avec passion et caféine</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
