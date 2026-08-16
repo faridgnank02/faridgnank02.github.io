@@ -1,499 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farid Gnankambary - AI Engineering Consultant</title>
-    <meta name="description" content="Farid Gnankambary - AI Engineering Consultant spécialisé en GenAI, Agents IA, RAG et MLOps">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farid GNANKAMBARY — AI Engineer (fr_trenton02)</title>
+  <meta name="description" content="AI Engineer building agents, RAG systems and LLM evaluation. Bilingual EN/FR.">
+  <meta name="theme-color" content="#0B0F14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <a href="#" class="logo">Farid Gnankambary</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
-                <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
-                <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
-                <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
-                <li><a href="#education" data-fr="Formation" data-en="Education">Formation</a></li>
-                <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="fr" onclick="switchLanguage('fr')">FR</button>
-                    <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">EN</button>
-                </div>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="lang-content active" data-lang="fr">
-                        <p class="hero-label">AI Engineering Consultant</p>
-                        <h1 class="hero-title">Farid Gnankambary</h1>
-                        <p class="hero-subtitle">GenAI &bull; Agents IA &bull; RAG &bull; MLOps &bull; Prototypage</p>
-                        <p class="hero-description">Concevoir des prototypes IA à forte valeur métier — du concept à la production</p>
-                    </div>
-                    <div class="lang-content" data-lang="en">
-                        <p class="hero-label">AI Engineering Consultant</p>
-                        <h1 class="hero-title">Farid Gnankambary</h1>
-                        <p class="hero-subtitle">GenAI &bull; AI Agents &bull; RAG &bull; MLOps &bull; Prototyping</p>
-                        <p class="hero-description">Designing high-business-value AI prototypes — from concept to production</p>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            <span data-fr="Me contacter" data-en="Contact me">Me contacter</span>
-                        </a>
-                        <a href="#projects" class="btn btn-outline">
-                            <i class="fas fa-code"></i>
-                            <span data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat-item">
-                            <span class="hero-stat-number">3+</span>
-                            <span class="hero-stat-label" data-fr="Années d'expérience" data-en="Years experience">Années d'expérience</span>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat-item">
-                            <span class="hero-stat-number">8+</span>
-                            <span class="hero-stat-label" data-fr="Projets IA livrés" data-en="AI projects delivered">Projets IA livrés</span>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat-item">
-                            <span class="hero-stat-number">4</span>
-                            <span class="hero-stat-label" data-fr="Clients enterprise" data-en="Enterprise clients">Clients enterprise</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="À propos" data-en="About me">À propos</span>
-                </h2>
-                <div class="about-grid">
-                    <div class="about-photo fade-in">
-                        <div class="photo-placeholder">
-                            <i class="fas fa-user-astronaut"></i>
-                        </div>
-                        <div class="photo-info">
-                            <p><i class="fas fa-envelope"></i> mohamedgnank@gmail.com</p>
-                            <p><i class="fas fa-phone"></i> +33 (0)7 85 47 23 87</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Île-de-France, France</p>
-                            <p><i class="fas fa-globe"></i> FR (Natif) | EN (Courant - TOEIC 955)</p>
-                        </div>
-                    </div>
-                    <div class="about-text fade-in">
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Ingénieur IA diplômé en Mathématiques Appliquées (CY Tech), spécialisé en conception et déploiement de systèmes LLM, agents IA et pipelines RAG en environnement enterprise et SaaS. 3+ ans d'expérience en prototypage rapide, orchestration d'agents (LangGraph), workflows LLM et MLOps (Docker, Kubernetes, AWS, Azure) chez Capgemini et DiGreen Advisory.</p>
-                            <p>Expert en développement de démonstrateurs IA orientés valeur métier : intégration d'APIs tierces, stratégies de prompting maintenables, évaluation LLM (LangFuse, LLM-as-Judge) et MCP (Model Context Protocol) pour connecter les agents à des sources de vérité réglementaires en temps réel. Habitué à collaborer avec des équipes produit, experts métiers et architectes en contexte Agile. Forte sensibilité à la gouvernance IA, sécurité des données (AES-256, anonymisation RGPD) et conformité réglementaire.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>AI Engineer with a degree in Applied Mathematics (CY Tech), specialized in designing and deploying LLM systems, AI agents and RAG pipelines in enterprise and SaaS environments. 3+ years of experience in rapid prototyping, agent orchestration (LangGraph), LLM workflows and MLOps (Docker, Kubernetes, AWS, Azure) at Capgemini and DiGreen Advisory.</p>
-                            <p>Expert in developing business-value-driven AI demonstrators: third-party API integration, maintainable prompting strategies, LLM evaluation (LangFuse, LLM-as-Judge) and MCP (Model Context Protocol) to connect agents to real-time regulatory sources of truth. Experienced collaborating with product teams, business experts and architects in Agile environments. Strong focus on AI governance, data security (AES-256, GDPR anonymization) and regulatory compliance.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="Compétences" data-en="Skills">Compétences</span>
-                </h2>
-                <div class="skills-grid">
-                    <div class="skill-card fade-in">
-                        <div class="skill-icon-wrapper">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>IA Generative & Agents</h3>
-                        <ul>
-                            <li>LLM / RAG / Agents IA (LangGraph, LangChain)</li>
-                            <li>MCP (Model Context Protocol)</li>
-                            <li>Ollama, HuggingFace, Llama-3, Mistral-7B</li>
-                            <li>Prompt Engineering, Structured Output (Pydantic)</li>
-                            <li>Fine-tuning (QLoRA), Embeddings (Sentence-Transformers)</li>
-                            <li>Vector Stores (FAISS, Chroma)</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card fade-in">
-                        <div class="skill-icon-wrapper">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>MLOps & Cloud</h3>
-                        <ul>
-                            <li>Docker, Kubernetes</li>
-                            <li>AWS (ECS, EC2, S3, Lambda)</li>
-                            <li>CI/CD (GitHub Actions, Jenkins)</li>
-                            <li>MLflow (tracking, monitoring, déploiement)</li>
-                            <li>LangFuse (tracing, evaluation, scoring LLM)</li>
-                            <li>FastAPI, REST APIs, Architecture SaaS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card fade-in">
-                        <div class="skill-icon-wrapper">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Data & ML</h3>
-                        <ul>
-                            <li>PyTorch, TensorFlow, scikit-learn, XGBoost</li>
-                            <li>NLP : NER, Classification, Embeddings, Speech</li>
-                            <li>ETL, Parsing PDF, Anonymisation PII (RGPD)</li>
-                            <li>Évaluation LLM (RAGAS, NDCG, fairness, hallucination)</li>
-                            <li>Python, SQL, R, Java</li>
-                            <li>Data pipelines structurés / non-structurés</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card fade-in">
-                        <div class="skill-icon-wrapper">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Communication technique & vulgarisation</li>
-                            <li>Collaboration équipes produit / métier / architecture</li>
-                            <li>Méthodologies Agiles (Scrum, Kanban)</li>
-                            <li>Documentation technique & expérimentations</li>
-                            <li>Veille technologique IA</li>
-                            <li>Animation de démonstrations clients</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="Expérience" data-en="Experience">Expérience</span>
-                </h2>
-                <div class="timeline">
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">04/2025 — Présent</div>
-                            <h3>Ingénieur IA</h3>
-                            <p class="timeline-company">DiGreen Advisory — Paris</p>
-                            <div class="lang-content active" data-lang="fr">
-                                <ul>
-                                    <li>Conçu et mis en production (SaaS) Di Tech Control : automatisation de +250 points de contrôle internes via pipelines LLM complets (ingestion PDF, extraction, analyse LLM, génération rapports)</li>
-                                    <li>Architecture souveraine multi-tenant : anonymisation AES-256, zero-retention LLM, isolation des données clients pour conformité réglementaire enterprise</li>
-                                    <li>Conçu Di Tech Decision : agent décisionnel RegTech (marketplace solutions, scoring multi-critères) en LangGraph (superviseur + 4 sous-graphes spécialisés)</li>
-                                    <li>Intégré un MCP connecté à des bases réglementaires pour injection en temps réel d'informations conformité (RGPD, normes sectorielles)</li>
-                                    <li>Mise en place d'évaluation continue avec LangFuse (tracing, LLM-as-Judge) et monitoring MLflow sur infrastructure AWS Docker scalable</li>
-                                </ul>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <ul>
-                                    <li>Designed and shipped (SaaS) Di Tech Control: automated 250+ internal control points via full LLM pipelines (PDF ingestion, extraction, LLM analysis, report generation)</li>
-                                    <li>Sovereign multi-tenant architecture: AES-256 anonymization, zero-retention LLM, client data isolation for enterprise regulatory compliance</li>
-                                    <li>Built Di Tech Decision: RegTech decision agent (solution marketplace, multi-criteria scoring) in LangGraph (supervisor + 4 specialized sub-graphs)</li>
-                                    <li>Integrated MCP connected to regulatory databases for real-time compliance data injection (GDPR, industry standards)</li>
-                                    <li>Implemented continuous evaluation with LangFuse (tracing, LLM-as-Judge) and MLflow monitoring on scalable AWS Docker infrastructure</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">06/2025 — Présent</div>
-                            <h3>Développeur IA Freelance</h3>
-                            <p class="timeline-company">Fiverr — Remote</p>
-                            <div class="lang-content active" data-lang="fr">
-                                <ul>
-                                    <li>Conçu et livré des systèmes IA agentiques (LangGraph, RAG, FastAPI) pour clients internationaux : analyse du besoin, conception, déploiement production</li>
-                                    <li>Chatbots IA et pipelines LLM end-to-end : ingestion, indexation vectorielle (FAISS), API REST, monitoring</li>
-                                    <li>Déploiement cloud AWS (EC2, S3, Lambda) avec Docker et GitHub Actions CI/CD</li>
-                                </ul>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <ul>
-                                    <li>Designed and delivered agentic AI systems (LangGraph, RAG, FastAPI) for international clients: needs analysis, design, production deployment</li>
-                                    <li>AI chatbots and end-to-end LLM pipelines: ingestion, vector indexing (FAISS), REST API, monitoring</li>
-                                    <li>AWS cloud deployment (EC2, S3, Lambda) with Docker and GitHub Actions CI/CD</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">11/2023 — 11/2024</div>
-                            <h3>Data Scientist — Alternant</h3>
-                            <p class="timeline-company">Sogeti (Groupe Capgemini) — Issy-les-Moulineaux</p>
-                            <div class="lang-content active" data-lang="fr">
-                                <ul>
-                                    <li>Système de recommandation hybride (Content-Based + RAG) avec LangChain, Llama-3, FAISS, Sentence Transformers sur +4000 CVs/offres : +18% de pertinence de matching</li>
-                                    <li>Suite d'évaluation Python (NDCG/Recall, équité, hallucination via LLM-as-Judge) sur golden dataset annoté manuellement</li>
-                                    <li>Pipelines MLOps Azure bout-en-bout : parsing PDF, anonymisation PII (RGPD), structuration LLM, web scraping, ingestion automatisée</li>
-                                    <li>Benchmarking Content-Based vs RAG ; état de l'art sur 20+ publications LLM ; CI/CD GitHub Actions et déploiement Docker/ECS</li>
-                                </ul>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <ul>
-                                    <li>Hybrid recommendation system (Content-Based + RAG) with LangChain, Llama-3, FAISS, Sentence Transformers on 4000+ CVs/jobs: +18% matching relevance</li>
-                                    <li>Python evaluation suite (NDCG/Recall, fairness, hallucination via LLM-as-Judge) on manually annotated golden dataset</li>
-                                    <li>End-to-end Azure MLOps pipelines: PDF parsing, PII anonymization (GDPR), LLM structuring, web scraping, automated ingestion</li>
-                                    <li>Content-Based vs RAG benchmarking; state-of-the-art review of 20+ LLM publications; GitHub Actions CI/CD and Docker/ECS deployment</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">06/2023 — 09/2023</div>
-                            <h3>Machine Learning Engineer — Stagiaire</h3>
-                            <p class="timeline-company">OUIcoding — Paris</p>
-                            <div class="lang-content active" data-lang="fr">
-                                <ul>
-                                    <li>Pipeline NLP (NER, POS tagging, enrichissement sémantique) sur métadonnées produits et feedback utilisateurs pour amélioration SEO</li>
-                                    <li>Workflow MLOps sur GCP : entraînement automatisé, API REST, versioning de modèles</li>
-                                    <li>POC prédictif retail (prévision ventes + dashboard interactif)</li>
-                                </ul>
-                            </div>
-                            <div class="lang-content" data-lang="en">
-                                <ul>
-                                    <li>NLP pipeline (NER, POS tagging, semantic enrichment) on product metadata and user feedback for SEO improvement</li>
-                                    <li>MLOps workflow on GCP: automated training, REST API, model versioning</li>
-                                    <li>Retail predictive POC (sales forecasting + interactive dashboard)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="Projets" data-en="Projects">Projets</span>
-                </h2>
-                <div class="projects-grid">
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-robot"></i></div>
-                        <h3>Plateforme IA Multi-Agents</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Analyse et classification automatique de 21 000+ projets internationaux via système multi-agents LangGraph avec RAG hybride, évaluation LangFuse et API FastAPI.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>Automated analysis and classification of 21,000+ international projects via LangGraph multi-agent system with hybrid RAG, LangFuse evaluation and FastAPI.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>FAISS</span><span>Docker</span><span>LangFuse</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-database"></i></div>
-                        <h3 data-fr="Générateur Text-to-SQL Multilingue" data-en="Multilingual Text-to-SQL Generator">Générateur Text-to-SQL Multilingue</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Agent LangGraph orchestrant un workflow LLM avec RAG sur schémas SQL, génération supervisée, évaluation automatisée et pipeline CI/CD complet.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>LangGraph agent orchestrating an LLM workflow with RAG on SQL schemas, supervised generation, automated evaluation and full CI/CD pipeline.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FAISS</span><span>Docker</span><span>K8s</span><span>MLFlow</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02/multilingual-text-2-sql/tree/main" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <h3>LLM Decision System</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Fine-tuning QLoRA de Mistral-7B + raisonnement Chain-of-Thought pour évaluation automatique avec explications traçables et métriques de qualité.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>QLoRA fine-tuning of Mistral-7B + Chain-of-Thought reasoning for automatic evaluation with traceable explanations and quality metrics.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>Mistral-7B</span><span>QLoRA</span><span>CoT</span><span>LangFuse</span><span>PyTorch</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-eye"></i></div>
-                        <h3>Website Monitoring Agent</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Agent autonome de monitoring avec détection automatique de changements, analyse sémantique et notifications email. Déployé sur AWS.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>Autonomous monitoring agent with automatic change detection, semantic analysis and email notifications. Deployed on AWS.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>AWS</span><span>Docker</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-video"></i></div>
-                        <h3>Video Summarizer</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Plateforme web d'extraction et résumé automatique de contenu vidéo, avec deux modèles d'IA et cadre d'évaluation hybride validé.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>Web platform for automatic video content extraction and summarization, with two AI models and validated hybrid evaluation framework.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>Python</span><span>PyTorch</span><span>OpenAI</span><span>HuggingFace</span><span>Streamlit</span><span>FastAPI</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02/video-summarizer/tree/main" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                    <div class="project-card fade-in">
-                        <div class="project-icon"><i class="fas fa-home"></i></div>
-                        <h3 data-fr="Chatbot Énergie Intelligente" data-en="Smart Energy Chatbot">Chatbot Énergie Intelligente</h3>
-                        <div class="lang-content active" data-lang="fr">
-                            <p>Plateforme de prédiction et optimisation de consommation énergétique avec ML (Random Forest) et IA générative (TinyLlama) pour recommandations personnalisées.</p>
-                        </div>
-                        <div class="lang-content" data-lang="en">
-                            <p>Energy consumption prediction and optimization platform with ML (Random Forest) and generative AI (TinyLlama) for personalized recommendations.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>TinyLlama</span><span>HuggingFace</span><span>Pandas</span>
-                        </div>
-                        <a href="https://github.com/faridgnank02/energy-prediction-chatbot" class="project-link" target="_blank"><i class="fab fa-github"></i> Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="Education" data-en="Education">Éducation</span>
-                </h2>
-                <div class="timeline">
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">2021 — 2024</div>
-                            <h3>Diplôme d'Ingénieur — Mathématiques Appliquées, spécialité IA</h3>
-                            <p class="timeline-company">CY Tech — Cergy, France</p>
-                            <p class="timeline-desc">Deep Learning | NLP | Reinforcement Learning | AI-based Image Processing | Big Data | GPU Computing | Multiobjective Optimization | Signal Processing</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-card">
-                            <div class="timeline-date">2019 — 2021</div>
-                            <h3 data-fr="Classes Préparatoires Scientifiques" data-en="Scientific Preparatory Classes">Classes Préparatoires Scientifiques</h3>
-                            <p class="timeline-company">Lycée Ibn Al Ghazi — Rabat, Morocco</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="certifications fade-in">
-                    <h3 data-fr="Certifications" data-en="Certifications">Certifications</h3>
-                    <div class="cert-list">
-                        <span class="cert-item"><i class="fas fa-certificate"></i> Deep Learning Specialization (DeepLearning.AI)</span>
-                        <span class="cert-item"><i class="fas fa-certificate"></i> Neural Networks with PyTorch (IBM)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">
-                    <span data-fr="Contact" data-en="Contact">Contact</span>
-                </h2>
-                <div class="contact-grid">
-                    <div class="contact-info fade-in">
-                        <h3 data-fr="Restons en contact" data-en="Let's stay in touch">Restons en contact</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <p class="contact-label">Email</p>
-                                <a href="mailto:mohamedgnank@gmail.com">mohamedgnank@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <p class="contact-label">Téléphone</p>
-                                <p>+33 (0)7 85 47 23 87</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <p class="contact-label">Localisation</p>
-                                <p>Île-de-France, France</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <p class="contact-label">GitHub</p>
-                                <a href="https://github.com/faridgnank02" target="_blank">github.com/faridgnank02</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <p class="contact-label">LinkedIn</p>
-                                <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" target="_blank">linkedin.com/in/farid-gnankambary</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form fade-in">
-                        <form onsubmit="handleFormSubmit(event)">
-                            <div class="form-group">
-                                <label for="name"><span data-fr="Nom" data-en="Name">Nom</span></label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject"><span data-fr="Sujet" data-en="Subject">Sujet</span></label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message"><span data-fr="Message" data-en="Message">Message</span></label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">
-                                <i class="fas fa-paper-plane"></i>
-                                <span data-fr="Envoyer" data-en="Send">Envoyer</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/faridgnank02" class="social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:mohamedgnank@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2026 Farid Gnankambary</p>
+  <header class="site-header">
+    <nav class="nav">
+      <span class="logo mono">fr_trenton02</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="skills.html"><span data-fr="Compétences" data-en="Skills">Skills</span></a></li>
+        <li><a href="projects.html"><span data-fr="Projets" data-en="Projects">Projects</span></a></li>
+        <li><a href="about.html"><span data-fr="À propos" data-en="About">About</span></a></li>
+        <li><a href="blog/index.html"><span data-fr="Blog" data-en="Blog">Blog</span></a></li>
+        <li><a href="contact.html"><span data-fr="Contact" data-en="Contact">Contact</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="fr" onclick="switchLanguage('fr')">FR</button>
         </div>
-    </footer>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero-handle">fr_trenton02</p>
+        <h1 class="hero-title">Farid GNANKAMBARY</h1>
+        <p class="hero-subtitle lang-content active" data-lang="en">I design, build and harden AI agents &amp; RAG systems — and make data talk. AI Engineer on the path of the best.</p>
+        <p class="hero-subtitle lang-content" data-lang="fr">Je conçois, je construis et je fiabilise des agents IA &amp; des systèmes RAG — et je fais parler les données.</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary"><span data-fr="Voir mes projets" data-en="View my projects">View my projects</span></a>
+          <a href="contact.html" class="btn btn-outline"><span data-fr="Me contacter" data-en="Contact me">Contact me</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><span class="stat-number" data-count="21">21</span><span class="stat-label" data-fr="K projets analysés" data-en="K projects analyzed">K projects analyzed</span></div>
+          <div><span class="stat-number" data-count="250" data-suffix="+">250+</span><span class="stat-label" data-fr="contrôles automatisés" data-en="controls automated">controls automated</span></div>
+          <div><span class="stat-number" data-count="10" data-suffix="+">10+</span><span class="stat-label" data-fr="projets open source" data-en="open-source projects">open-source projects</span></div>
+          <div><span class="stat-number" data-count="3" data-suffix="+">3+</span><span class="stat-label" data-fr="années d'expérience" data-en="years of experience">years of experience</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTIONS_PLACEHOLDER -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-links">
+        <a href="https://github.com/faridgnank02" class="social-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mohamedgnank@gmail.com" class="social-link">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Farid GNANKAMBARY — fr_trenton02</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
 </body>
 </html>
