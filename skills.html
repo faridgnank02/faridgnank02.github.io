@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills &amp; Tool Stack — Farid GNANKAMBARY</title>
+  <meta name="description" content="Full tool stack of an AI Engineer — LLM & agents, evaluation & LLMOps, cloud & infrastructure, data & storage, methods. Bilingual EN/FR.">
+  <meta name="theme-color" content="#0B0F14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <span class="logo mono">fr_trenton02</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="skills.html" aria-current="page"><span data-fr="Compétences" data-en="Skills">Skills</span></a></li>
+        <li><a href="projects.html"><span data-fr="Projets" data-en="Projects">Projects</span></a></li>
+        <li><a href="about.html"><span data-fr="À propos" data-en="About">About</span></a></li>
+        <li><a href="blog/index.html"><span data-fr="Blog" data-en="Blog">Blog</span></a></li>
+        <li><a href="contact.html"><span data-fr="Contact" data-en="Contact">Contact</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="fr" onclick="switchLanguage('fr')">FR</button>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero-handle">fr_trenton02</p>
+        <h1 class="hero-title"><span data-fr="Compétences &amp; Stack technique" data-en="Skills &amp; Tool Stack">Skills &amp; Tool Stack</span></h1>
+        <p class="hero-subtitle lang-content active" data-lang="en">The tools I ship with — from LLM agents and rigorous evaluation to cloud infrastructure, data storage and delivery methods.</p>
+        <p class="hero-subtitle lang-content" data-lang="fr">Les outils avec lesquels je livre — des agents LLM et de l'évaluation rigoureuse à l'infrastructure cloud, au stockage de données et aux méthodes de delivery.</p>
+        <p class="hero-subtitle lang-content active" data-lang="en" style="max-width:70ch;margin-top:1rem">Engineer's approach: every system gets rigorous evaluation, honest metrics and traceability. I harden for sovereignty and security — encryption at rest, zero data retention, multi-tenant isolation — and I stay accountable for what my systems do.</p>
+        <p class="hero-subtitle lang-content" data-lang="fr" style="max-width:70ch;margin-top:1rem">Approche d'ingénieur : chaque système est soumis à une évaluation rigoureuse, des métriques honnêtes et une traçabilité. Je fiabilise pour la souveraineté et la sécurité — chiffrement au repos, zéro conservation de données, isolation multi-tenant — et je reste responsable de ce que produisent mes systèmes.</p>
+      </div>
+    </section>
+
+    <section id="skills-detail" class="section fade-in">
+      <div class="container">
+        <h2 class="section-title"><span data-fr="Stack technique complète" data-en="Complete tool stack">Complete tool stack</span></h2>
+        <div class="tool-grid">
+          <div class="card">
+            <h3><span data-fr="LLM & Agents" data-en="LLM & Agents">LLM &amp; Agents</span></h3>
+            <ul style="margin:.75rem 0 0 1.2rem;color:var(--text-2)">
+              <li class="lang-content active" data-lang="en">LLM/RAG/agents (LangGraph, LangChain)</li>
+              <li class="lang-content" data-lang="fr">LLM/RAG/agents (LangGraph, LangChain)</li>
+              <li class="lang-content active" data-lang="en">MCP servers &amp; tool integration</li>
+              <li class="lang-content" data-lang="fr">Serveurs MCP &amp; intégration d'outils</li>
+              <li class="lang-content active" data-lang="en">Prompt engineering &amp; structured outputs</li>
+              <li class="lang-content" data-lang="fr">Ingénierie de prompts &amp; sorties structurées</li>
+              <li class="lang-content active" data-lang="en">Fine-tuning (QLoRA) &amp; embeddings</li>
+              <li class="lang-content" data-lang="fr">Fine-tuning (QLoRA) &amp; embeddings</li>
+              <li class="lang-content active" data-lang="en">Vector stores (FAISS, Chroma, Weaviate)</li>
+              <li class="lang-content" data-lang="fr">Bases vectorielles (FAISS, Chroma, Weaviate)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3><span data-fr="Évaluation & LLMOps" data-en="Evaluation & LLMOps">Evaluation &amp; LLMOps</span></h3>
+            <ul style="margin:.75rem 0 0 1.2rem;color:var(--text-2)">
+              <li class="lang-content active" data-lang="en">LangFuse · LLM-as-Judge · RAGAS</li>
+              <li class="lang-content" data-lang="fr">LangFuse · LLM-as-Judge · RAGAS</li>
+              <li class="lang-content active" data-lang="en">NDCG/Recall/fairness/hallucination metrics</li>
+              <li class="lang-content" data-lang="fr">Métriques NDCG/Recall/équité/hallucination</li>
+              <li class="lang-content active" data-lang="en">Drift detection &amp; continuous evaluation</li>
+              <li class="lang-content" data-lang="fr">Détection de dérive &amp; évaluation continue</li>
+              <li class="lang-content active" data-lang="en">MLflow (tracking &amp; monitoring)</li>
+              <li class="lang-content" data-lang="fr">MLflow (tracking &amp; monitoring)</li>
+              <li class="lang-content active" data-lang="en">Latency/token/cost monitoring</li>
+              <li class="lang-content" data-lang="fr">Monitoring latence/tokens/coût</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3><span data-fr="Cloud & Infra" data-en="Cloud & Infra">Cloud &amp; Infra</span></h3>
+            <ul style="margin:.75rem 0 0 1.2rem;color:var(--text-2)">
+              <li class="lang-content active" data-lang="en">Docker &amp; Kubernetes</li>
+              <li class="lang-content" data-lang="fr">Docker &amp; Kubernetes</li>
+              <li class="lang-content active" data-lang="en">GCP (Cloud Run, BigQuery, Vertex AI, GCS)</li>
+              <li class="lang-content" data-lang="fr">GCP (Cloud Run, BigQuery, Vertex AI, GCS)</li>
+              <li class="lang-content active" data-lang="en">AWS (ECS, S3, Lambda)</li>
+              <li class="lang-content" data-lang="fr">AWS (ECS, S3, Lambda)</li>
+              <li class="lang-content active" data-lang="en">CI/CD (GitHub Actions, Cloud Build)</li>
+              <li class="lang-content" data-lang="fr">CI/CD (GitHub Actions, Cloud Build)</li>
+              <li class="lang-content active" data-lang="en">FastAPI &amp; REST APIs</li>
+              <li class="lang-content" data-lang="fr">FastAPI &amp; API REST</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3><span data-fr="Données & Stockage" data-en="Data & Storage">Data &amp; Storage</span></h3>
+            <ul style="margin:.75rem 0 0 1.2rem;color:var(--text-2)">
+              <li class="lang-content active" data-lang="en">PostgreSQL, BigQuery</li>
+              <li class="lang-content" data-lang="fr">PostgreSQL, BigQuery</li>
+              <li class="lang-content active" data-lang="en">Weaviate, FAISS, Qdrant, Redis</li>
+              <li class="lang-content" data-lang="fr">Weaviate, FAISS, Qdrant, Redis</li>
+              <li class="lang-content active" data-lang="en">ETL &amp; PDF parsing</li>
+              <li class="lang-content" data-lang="fr">ETL &amp; parsing PDF</li>
+              <li class="lang-content active" data-lang="en">PII anonymization (GDPR)</li>
+              <li class="lang-content" data-lang="fr">Anonymisation des données personnelles (RGPD)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3><span data-fr="Langues & Méthodes" data-en="Languages & Methods">Languages &amp; Methods</span></h3>
+            <ul style="margin:.75rem 0 0 1.2rem;color:var(--text-2)">
+              <li class="lang-content active" data-lang="en">French (native) / English (fluent, TOEIC 955)</li>
+              <li class="lang-content" data-lang="fr">Français (natif) / Anglais (courant, TOEIC 955)</li>
+              <li class="lang-content active" data-lang="en">Agile/Scrum</li>
+              <li class="lang-content" data-lang="fr">Agile/Scrum</li>
+              <li class="lang-content active" data-lang="en">Technical writing &amp; demos</li>
+              <li class="lang-content" data-lang="fr">Rédaction technique &amp; démos</li>
+              <li class="lang-content active" data-lang="en">AI governance &amp; security (AES-256, zero-retention, multi-tenant)</li>
+              <li class="lang-content" data-lang="fr">Gouvernance &amp; sécurité IA (AES-256, zéro rétention, multi-tenant)</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem"><a href="index.html#skills" class="btn btn-outline"><span data-fr="Retour à l'accueil" data-en="Back to home">Back to home</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-links">
+        <a href="https://github.com/faridgnank02" class="social-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mohamedgnank@gmail.com" class="social-link">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Farid GNANKAMBARY — fr_trenton02</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
