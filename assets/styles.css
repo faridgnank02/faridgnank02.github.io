@@ -22,6 +22,7 @@
   --radius: 12px;
   --space: 5rem;
   --content-max: 1200px;
+  --bg-alt: #0d1219;
 }
 
 /* ---------- Reset ---------- */
@@ -73,7 +74,7 @@ section {
 }
 
 .section-alt {
-  background: #0d1219;
+  background: var(--bg-alt);
 }
 
 /* ---------- Components ---------- */
@@ -407,7 +408,7 @@ section {
 }
 
 .section-alt .timeline-marker {
-  border-color: #0d1219;
+  border-color: var(--bg-alt);
 }
 
 .timeline-date {
