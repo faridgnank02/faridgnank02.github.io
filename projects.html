@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Farid GNANKAMBARY</title>
+  <meta name="description" content="Selected production and AI projects by Farid GNANKAMBARY — RAG, agents, voice AI, text-to-SQL. Bilingual EN/FR.">
+  <meta name="theme-color" content="#0B0F14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <span class="logo mono">fr_trenton02</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="skills.html"><span data-fr="Compétences" data-en="Skills">Skills</span></a></li>
+        <li><a href="projects.html" aria-current="page"><span data-fr="Projets" data-en="Projects">Projects</span></a></li>
+        <li><a href="about.html"><span data-fr="À propos" data-en="About">About</span></a></li>
+        <li><a href="blog/index.html"><span data-fr="Blog" data-en="Blog">Blog</span></a></li>
+        <li><a href="contact.html"><span data-fr="Contact" data-en="Contact">Contact</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="fr" onclick="switchLanguage('fr')">FR</button>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero-handle">fr_trenton02</p>
+        <h1 class="hero-title"><span data-fr="Projets sélectionnés" data-en="Selected Projects">Selected Projects</span></h1>
+        <p class="hero-subtitle lang-content active" data-lang="en">A selection of production and AI projects — RAG systems, agents and ML platforms. Source code is on GitHub where a public repo is available.</p>
+        <p class="hero-subtitle lang-content" data-lang="fr">Une sélection de projets de production et d'IA — systèmes RAG, agents et plateformes ML. Le code source est sur GitHub lorsqu'un dépôt public est disponible.</p>
+      </div>
+    </section>
+
+    <section id="projects-detail" class="section fade-in">
+      <div class="container">
+        <h2 class="section-title"><span data-fr="Projets à la une" data-en="Featured projects">Featured projects</span></h2>
+        <div class="project-grid">
+          <article class="card project-card"><div class="badge">AI / RAG</div><h3>Knowbase</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">From-scratch RAG groundwork — synchronized PostgreSQL/FAISS with an LLM gateway, retriever reranking and a web UI.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Travail de base RAG réalisé from scratch — PostgreSQL/FAISS synchronisés avec une passerelle LLM, reranking du retriever et une web UI.</p><div><span class="tech">Python</span><span class="tech">pgvector</span><span class="tech">MCP</span><span class="tech">RAG</span><span class="tech">FastAPI</span></div><a href="blog/2026-08-16-knownbase-a-rag-story.html" class="project-link">Case study →</a><a href="https://github.com/faridgnank02/Knowbase" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+          <article class="card project-card"><div class="badge">Voice AI</div><h3>Voice Clone Consent Gate</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Ethical voice-cloning consent system using MCP — privacy-first, with a multilingual consent gate and cross-lingual synthesis.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Système éthique de consentement pour le clonage vocal via MCP — respectueux de la vie privée, portail de consentement multilingue et synthèse cross-lingue.</p><div><span class="tech">XTTS v2</span><span class="tech">Whisper</span><span class="tech">Gradio</span><span class="tech">Ollama</span></div><a href="https://github.com/faridgnank02/voice-cloning" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+          <article class="card project-card"><div class="badge">Agentic RAG</div><h3>PPD2 AI Platform</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Agentic RAG platform analyzing 21,198 international development projects — AdaptiveRouter pipeline, FAISS, GPT-4o, Streamlit.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Plateforme RAG agentique analysant 21 198 projets internationaux de développement — pipeline AdaptiveRouter, FAISS, GPT-4o, Streamlit.</p><div><span class="tech">FastAPI</span><span class="tech">FAISS</span><span class="tech">GPT-4o</span><span class="tech">Streamlit</span></div><a href="https://github.com/faridgnank02" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+          <article class="card project-card"><div class="badge">Agents</div><h3>Monitor Agent</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Enterprise multi-agent telemetry and incident triage — MCP server, human-in-the-loop approvals, real-time dashboard.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Télémétrie multi-agents et triage d'incidents en entreprise — serveur MCP, approbations humain-dans-la-boucle, dashboard temps réel.</p><div><span class="tech">LangGraph</span><span class="tech">MCP</span><span class="tech">FastAPI</span><span class="tech">Next.js</span><span class="tech">Groq</span></div><a href="https://github.com/faridgnank02/website-monitoring-agent" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+          <article class="card project-card"><div class="badge">Video AI</div><h3>Video Intelligence</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">GCP Video &amp; LLM pipelines — agentic video analysis into structured reports with cost-aware model routing.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Pipelines GCP Video &amp; LLM — analyse vidéo agentique en rapports structurés avec routage de modèles optimisé coût.</p><div><span class="tech">yt-dlp</span><span class="tech">Whisper</span><span class="tech">Ollama</span><span class="tech">FastAPI</span><span class="tech">React</span></div><a href="https://github.com/faridgnank02/video-summarizer" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+          <article class="card project-card"><div class="badge">Text-to-SQL</div><h3>Multilingual Text-to-SQL</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Context-aware natural language → SQL in FR/EN/ES/DE via a LangGraph pipeline, RAG, anti-injection layers, MLflow.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Langage naturel contextuel → SQL en FR/EN/ES/DE via un pipeline LangGraph, RAG, couches anti-injection, MLflow.</p><div><span class="tech">LangGraph</span><span class="tech">RAG</span><span class="tech">FAISS</span><span class="tech">MLflow</span><span class="tech">Docker</span></div><a href="https://github.com/faridgnank02/multilingual-text-2-sql" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
+        </div>
+        <div style="margin-top:2rem"><a href="index.html#projects" class="btn btn-outline"><span data-fr="Retour à l'accueil" data-en="Back to home">Back to home</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-links">
+        <a href="https://github.com/faridgnank02" class="social-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mohamedgnank@gmail.com" class="social-link">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Farid GNANKAMBARY — fr_trenton02</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
