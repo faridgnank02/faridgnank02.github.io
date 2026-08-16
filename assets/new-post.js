@@ -16,7 +16,8 @@ function renderIndex(posts, prefix) {
   return sorted.map(p => {
     const tags = (p.tags || []).map(t => `<span class="tech">${t}</span>`).join('');
     const langBadge = p.lang === 'fr' ? '<span class="badge">FR</span>' : '<span class="badge">EN</span>';
-    return `<article class="post-card"><div>${langBadge}</div><h3><a href="${prefix}${p.slug}.html">${p.title}</a></h3><p class="post-date">${p.date}</p><p>${tags}</p></article>`;
+    const tagsBlock = tags ? `<p>${tags}</p>` : '';
+    return `<article class="card post-card"><div>${langBadge}</div><h3><a href="${prefix}${p.slug}.html">${p.title}</a></h3><p class="post-date">${p.date}</p>${tagsBlock}</article>`;
   }).join('\n');
 }
 
@@ -45,6 +46,7 @@ function writeIndex(dir, posts) {
     .replace('<!-- BLOG_LIST -->', body)
     .replace(/<!-- PAGE_TITLE -->/g, 'Posts')
     .replace(/<!-- PAGE -->/g, 'blog-index')
+    .replace(/<!-- TAGS -->/, '')
     .replace(/<p class="post-date mono">[\s\S]*?<\/p>/, '')
     .replace(/<!-- TITLE -->/g, '')
     .replace(/<!-- PUBLISHED -->/g, '')
