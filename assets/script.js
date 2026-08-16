@@ -20,7 +20,8 @@ function switchLanguage(lang) {
 }
 
 function toggleMobileMenu() {
-  document.getElementById('navLinks').classList.toggle('active');
+  const menu = document.getElementById('navLinks');
+  if (menu) menu.classList.toggle('active');
 }
 
 function animateCounters() {
