@@ -17,5 +17,5 @@ test('renderIndex emits items sorted newest-first with expected structure', () =
   assert.ok(html.includes('Beta'));
   assert.ok(html.indexOf('Beta') < html.indexOf('Alpha'), 'should be sorted newest first');
   assert.ok(html.includes('Agents'));
-  assert.ok(html.includes('class="post-card"'));
+  assert.ok(html.includes('class="card post-card"'));
 });
