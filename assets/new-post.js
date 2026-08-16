@@ -31,7 +31,7 @@ function collectPosts(dir) {
         slug: f.replace(/\.html$/, ''),
         title: get(/<title>(.*?)<\/title>/),
         date: get(/<meta name="published" content="([\d-]+)">/),
-        lang: get(/<meta name="lang" content="([a-z]{2})">/),
+        lang: (get(/content="([a-z]{2})"/i) || '').toLowerCase(),
         tags: (get(/<meta name="tags" content="([^"]*)">/) || '').split(',').map(t => t.trim()).filter(Boolean),
       };
     });
