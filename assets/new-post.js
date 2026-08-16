@@ -45,6 +45,7 @@ function writeIndex(dir, posts) {
     .replace('<!-- BLOG_LIST -->', body)
     .replace(/<!-- PAGE_TITLE -->/g, 'Posts')
     .replace(/<!-- PAGE -->/g, 'blog-index')
+    .replace(/<p class="post-date mono">[\s\S]*?<\/p>/, '')
     .replace(/<!-- TITLE -->/g, '')
     .replace(/<!-- PUBLISHED -->/g, '')
     .replace(/<!-- LANG -->/g, '')
