@@ -1,133 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farid GNANKAMBARY — AI Engineer (fr_trenton02)</title>
-  <meta name="description" content="AI Engineer building agents, RAG systems and LLM evaluation. Bilingual EN/FR.">
-  <meta name="theme-color" content="#0B0F14">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Farid GNANKAMBARY — AI Engineer (fr_trenton02)</title>
+<meta name="description" content="Portfolio de Farid GNANKAMBARY — AI Engineer, racines Data Science. Agents, RAG, évaluation LLM, ingénierie d'inférence. FR/EN." />
+<meta name="theme-color" content="#f7f7f5" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <span class="logo mono">fr_trenton02</span>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="skills.html"><span data-fr="Compétences" data-en="Skills">Skills</span></a></li>
-        <li><a href="projects.html"><span data-fr="Projets" data-en="Projects">Projects</span></a></li>
-        <li><a href="about.html"><span data-fr="À propos" data-en="About">About</span></a></li>
-        <li><a href="blog/index.html"><span data-fr="Blog" data-en="Blog">Blog</span></a></li>
-        <li><a href="contact.html"><span data-fr="Contact" data-en="Contact">Contact</span></a></li>
-      </ul>
-      <div class="nav-actions">
-        <div class="lang-switch">
-          <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
-          <button class="lang-btn" data-lang="fr" onclick="switchLanguage('fr')">FR</button>
-        </div>
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="hero-handle">fr_trenton02</p>
-        <h1 class="hero-title">Farid GNANKAMBARY</h1>
-        <p class="hero-subtitle lang-content active" data-lang="en">I design, build and harden AI agents &amp; RAG systems — and make data talk. AI Engineer on the path of the best.</p>
-        <p class="hero-subtitle lang-content" data-lang="fr">Je conçois, je construis et je fiabilise des agents IA &amp; des systèmes RAG — et je fais parler les données.</p>
-        <div class="hero-cta">
-          <a href="projects.html" class="btn btn-primary"><span data-fr="Voir mes projets" data-en="View my projects">View my projects</span></a>
-          <a href="contact.html" class="btn btn-outline"><span data-fr="Me contacter" data-en="Contact me">Contact me</span></a>
-        </div>
-        <div class="hero-stats">
-          <div><span class="stat-number" data-count="21">21</span><span class="stat-label" data-fr="K projets analysés" data-en="K projects analyzed">K projects analyzed</span></div>
-          <div><span class="stat-number" data-count="250" data-suffix="+">250+</span><span class="stat-label" data-fr="contrôles automatisés" data-en="controls automated">controls automated</span></div>
-          <div><span class="stat-number" data-count="10" data-suffix="+">10+</span><span class="stat-label" data-fr="projets open source" data-en="open-source projects">open-source projects</span></div>
-          <div><span class="stat-number" data-count="3" data-suffix="+">3+</span><span class="stat-label" data-fr="années d'expérience" data-en="years of experience">years of experience</span></div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="section fade-in">
-      <div class="container">
-        <h2 class="section-title"><span data-fr="Projets à la une" data-en="Featured projects">Featured projects</span></h2>
-        <div class="project-grid">
-          <article class="card project-card"><div class="badge">AI / RAG</div><h3>Knowbase</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">From-scratch RAG knowledge base over FastAPI's corpus — vector + full-text + LLM reranker (MRR 0.90); CLI, MCP server &amp; web UI.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Base de connaissances RAG built from scratch sur le corpus FastAPI — vectoriel + full-text + reranker LLM (MRR 0.90) ; CLI, serveur MCP &amp; web UI.</p><div><span class="tech">Python</span><span class="tech">pgvector</span><span class="tech">MCP</span><span class="tech">RAG</span><span class="tech">FastAPI</span></div><a href="https://github.com/faridgnank02/cerebras_knowledge_base" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-          <article class="card project-card"><div class="badge">Voice AI</div><h3>Voice Clone Consent Gate</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Privacy-first local voice cloning with a multilingual consent gate and cross-lingual synthesis (XTTS v2) — no external APIs.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Clonage vocal local, respectueux de la vie privée, avec portail de consentement multilingue et synthèse cross-lingue (XTTS v2) — sans API externe.</p><div><span class="tech">XTTS v2</span><span class="tech">Whisper</span><span class="tech">Gradio</span><span class="tech">Ollama</span></div><a href="https://github.com/faridgnank02/voice-cloning" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-          <article class="card project-card"><div class="badge">Agentic RAG</div><h3>PPD2 AI Platform</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Agentic RAG platform analyzing 21,198 international development projects — AdaptiveRouter 8-step pipeline, FAISS, security layers.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Plateforme RAG agentique analysant 21 198 projets internationaux de développement — pipeline AdaptiveRouter en 8 étapes, FAISS, couches de sécurité.</p><div><span class="tech">FastAPI</span><span class="tech">FAISS</span><span class="tech">GPT-4o</span><span class="tech">Streamlit</span></div><a href="https://github.com/faridgnank02" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-          <article class="card project-card"><div class="badge">Agents</div><h3>Monitor Agent</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Enterprise website-change monitoring: multi-agent pipeline, MCP server, human-in-the-loop approvals, real-time dashboard.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Monitoring de changement de sites en entreprise : pipeline multi-agents, serveur MCP, approbations humain-dans-la-boucle, dashboard temps réel.</p><div><span class="tech">LangGraph</span><span class="tech">MCP</span><span class="tech">FastAPI</span><span class="tech">Next.js</span><span class="tech">Groq</span></div><a href="https://github.com/faridgnank02/website-monitoring-agent" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-          <article class="card project-card"><div class="badge">Video AI</div><h3>Video Intelligence</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Agentic video analysis into structured reports — summary, chapters, quotes — with cost-aware model routing and per-stage tracing.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Analyse vidéo agentique en rapports structurés — résumé, chapitres, citations — avec routage de modèles optimisé coût et tracing par étape.</p><div><span class="tech">yt-dlp</span><span class="tech">Whisper</span><span class="tech">Ollama</span><span class="tech">FastAPI</span><span class="tech">React</span></div><a href="https://github.com/faridgnank02/video-summarizer" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-          <article class="card project-card"><div class="badge">Text-to-SQL</div><h3>Multilingual Text-to-SQL</h3><p class="lang-content active" data-lang="en" style="color:var(--text-2)">Natural language → SQL in FR/EN/ES/DE via a LangGraph 8-node pipeline, RAG, anti-injection layers, MLflow + CI/CD.</p><p class="lang-content" data-lang="fr" style="color:var(--text-2)">Langage naturel → SQL en FR/EN/ES/DE via un pipeline LangGraph à 8 nœuds, RAG, couches anti-injection, MLflow + CI/CD.</p><div><span class="tech">LangGraph</span><span class="tech">RAG</span><span class="tech">FAISS</span><span class="tech">MLflow</span><span class="tech">Docker</span></div><a href="https://github.com/faridgnank02/multilingual-text-2-sql" target="_blank" rel="noopener" class="project-link">GitHub →</a></article>
-        </div>
-        <div style="margin-top:2rem"><a href="projects.html" class="btn btn-outline"><span data-fr="Tous mes projets" data-en="All projects">All projects</span></a></div>
-      </div>
-    </section>
-    <section id="skills" class="section section-alt fade-in">
-      <div class="container">
-        <h2 class="section-title"><span data-fr="Ce que je fais" data-en="What I do">What I do</span></h2>
-        <p class="lang-content active" data-lang="en" style="max-width:70ch;color:var(--text-2)">AI Engineer specialized in generative AI and agentic systems — designing robust, accountable LLM workflows from concept to production: RAG pipelines, multi-agent orchestration, and rigorous evaluation.</p>
-        <p class="lang-content" data-lang="fr" style="max-width:70ch;color:var(--text-2)">Ingénieur IA spécialisé en IA générative et systèmes agentiques — je conçois des workflows LLM robustes et traçables, du concept à la production : pipelines RAG, orchestration multi-agents et évaluation rigoureuse.</p>
-        <div class="tool-grid" style="margin-top:2.5rem">
-          <div class="card"><h3><span data-fr="LLM & Agents" data-en="LLM & Agents">LLM &amp; Agents</span></h3><span class="tech">LangGraph</span><span class="tech">LangChain</span><span class="tech">MCP</span><span class="tech">RAG</span><span class="tech">Fine-tuning</span><span class="tech">Structured Output</span></div>
-          <div class="card"><h3><span data-fr="Évaluation & LLMOps" data-en="Evaluation & LLMOps">Evaluation &amp; LLMOps</span></h3><span class="tech">LangFuse</span><span class="tech">LLM-as-Judge</span><span class="tech">RAGAS</span><span class="tech">MLflow</span><span class="tech">Drift</span><span class="tech">Monitoring</span></div>
-          <div class="card"><h3><span data-fr="Cloud & Infra" data-en="Cloud & Infra">Cloud &amp; Infra</span></h3><span class="tech">GCP</span><span class="tech">AWS</span><span class="tech">Docker</span><span class="tech">Kubernetes</span><span class="tech">FastAPI</span><span class="tech">CI/CD</span></div>
-          <div class="card"><h3><span data-fr="Données" data-en="Data">Data</span></h3><span class="tech">PostgreSQL</span><span class="tech">BigQuery</span><span class="tech">Weaviate</span><span class="tech">FAISS</span><span class="tech">Qdrant</span><span class="tech">Redis</span></div>
-        </div>
-        <div style="margin-top:2rem"><a href="skills.html" class="btn btn-outline"><span data-fr="Toutes mes compétences" data-en="View all skills">View all skills</span></a></div>
-      </div>
-    </section>
-    <section id="experience" class="section section-alt fade-in">
-      <div class="container">
-        <h2 class="section-title"><span data-fr="Parcours récent" data-en="Recent work">Recent work</span></h2>
-        <div class="timeline" style="display:flex;flex-direction:column;gap:1.5rem">
-          <div class="card"><h3>Ingénieur IA <span class="badge">since 04/2025</span></h3><p style="color:var(--text-2)">DiGreen Advisory — Paris</p><ul style="margin:1rem 0 0 1.2rem;color:var(--text-2)"><li class="lang-content active" data-lang="en">Designed &amp; shipped SaaS GenAI (Di Tech Control): automated 250+ internal compliance controls via full LLM pipelines.</li><li class="lang-content" data-lang="fr">Conçu et mis en production le SaaS GenAI (Di Tech Control) : automatisation de 250+ contrôles internes via des pipelines LLM complets.</li><li class="lang-content active" data-lang="en">Built RegTech decision agent (Di Tech Decision) in LangGraph — supervisor + 4 specialized sub-graphs.</li><li class="lang-content" data-lang="fr">Développé l'agent décisionnel RegTech (Di Tech Decision) en LangGraph — superviseur + 4 sous-graphes spécialisés.</li></ul></div>
-          <div class="card"><h3>Data Scientist <span class="badge">2023–2024</span></h3><p style="color:var(--text-2)">Sogeti (Capgemini) — Issy-les-Moulineaux</p><ul style="margin:1rem 0 0 1.2rem;color:var(--text-2)"><li class="lang-content active" data-lang="en">Hybrid recommendation system (Content-Based + RAG) over 4,000+ CVs/jobs → +18% matching relevance.</li><li class="lang-content" data-lang="fr">Système de recommandation hybride (Content-Based + RAG) sur 4 000+ CVs/offres → +18% de pertinence.</li></ul></div>
-          <div class="card"><h3>Développeur IA Freelance <span class="badge">since 06/2025</span></h3><p style="color:var(--text-2)">Fiverr — Remote</p><ul style="margin:1rem 0 0 1.2rem;color:var(--text-2)"><li class="lang-content active" data-lang="en">Shipped agentic AI systems &amp; RAG chatbots end-to-end (LangGraph, FastAPI, AWS, Docker).</li><li class="lang-content" data-lang="fr">Livré des systèmes IA agentiques et chatbots RAG bout-en-bout (LangGraph, FastAPI, AWS, Docker).</li></ul></div>
-        </div>
-        <div style="margin-top:2rem"><a href="experience.html" class="btn btn-outline"><span data-fr="Tout mon parcours" data-en="Full experience">Full experience</span></a></div>
-      </div>
-    </section>
-    <section id="education" class="section fade-in">
-      <div class="container">
-        <h2 class="section-title"><span data-fr="Formation" data-en="Education">Education</span></h2>
-        <div class="card"><h3><span data-fr="Diplôme d'Ingénieur" data-en="Engineering Degree">Engineering Degree</span> — <span data-fr="Mathématiques Appliquées, spécialité IA" data-en="Applied Mathematics, AI track">Applied Mathematics, AI track</span></h3><p style="color:var(--text-2)">CY Tech — Cergy, France · 2021–2024</p><p style="color:var(--text-2);margin-top:.5rem"><span class="badge">TOEIC 955</span> <span class="badge">Deep Learning Specialization</span> <span class="badge">PyTorch (IBM)</span></p></div>
-        <div style="margin-top:2rem"><a href="education.html" class="btn btn-outline"><span data-fr="Voir la formation" data-en="View education">View education</span></a></div>
-      </div>
-    </section>
-    <section id="about-teaser" class="section section-alt fade-in">
-      <div class="container" style="max-width:760px">
-        <h2 class="section-title"><span data-fr="Qui je suis" data-en="Who I am">Who I am</span></h2>
-        <p class="lang-content active" data-lang="en" style="color:var(--text-2)">AI Engineer with a degree in Applied Mathematics and 3+ years shipping LLM systems in enterprise &amp; SaaS — strong on Generative AI, agents, RAG, MLOps and LLM evaluation.</p>
-        <p class="lang-content" data-lang="fr" style="color:var(--text-2)">Ingénieur IA diplômé en Mathématiques Appliquées, 3+ ans d'expérience en production de systèmes LLM en entreprise &amp; SaaS — expert IA générative, agents, RAG, MLOps et évaluation LLM.</p>
-        <div style="margin-top:1.5rem"><a href="about.html" class="btn btn-outline"><span data-fr="En savoir plus" data-en="Learn more">Learn more</span></a></div>
-      </div>
-    </section>
-    <section id="contact" class="section fade-in">
-      <div class="container">
-        <h2 class="section-title"><span data-fr="Travaillons ensemble" data-en="Let's work together">Let's work together</span></h2>
-        <div class="tool-grid">
-          <a class="card" href="mailto:mohamedgnank@gmail.com" style="color:var(--text-1)"><h3>Email</h3><p class="mono" style="color:var(--accent)">mohamedgnank@gmail.com</p></a>
-          <a class="card" href="https://github.com/faridgnank02" target="_blank" rel="noopener" style="color:var(--text-1)"><h3>GitHub</h3><p class="mono" style="color:var(--accent)">github.com/faridgnank02</p></a>
-          <a class="card" href="https://linkedin.com/in/farid-gnankambary-a617821b2/" target="_blank" rel="noopener" style="color:var(--text-1)"><h3>LinkedIn</h3><p class="mono" style="color:var(--accent)">in/farid-gnankambary</p></a>
-          <div class="card"><h3><span data-fr="Localisation" data-en="Location">Location</span></h3><p class="mono" style="color:var(--accent)">Île-de-France, FR</p></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="social-links">
-        <a href="https://github.com/faridgnank02" class="social-link" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/farid-gnankambary-a617821b2/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:mohamedgnank@gmail.com" class="social-link">Email</a>
-      </div>
-      <p class="footer-copy">© 2026 Farid GNANKAMBARY — fr_trenton02</p>
+<nav class="site-nav" aria-label="Navigation">
+  <div class="in">
+    <span class="logo">fr_trenton02</span>
+    <div>
+      <span class="nav-links">
+        <a href="#what"><span class="i18n" data-fr="Ce que je fais" data-en="What I do">Ce que je fais</span></a>
+        <a href="#projects"><span class="i18n" data-fr="Projets" data-en="Projects">Projets</span></a>
+        <a href="#parcours"><span class="i18n" data-fr="Parcours" data-en="Journey">Parcours</span></a>
+        <a href="#contact"><span class="i18n" data-fr="Contact" data-en="Contact">Contact</span></a>
+      </span>
+      <span class="lang" role="group" aria-label="Language">
+        <button data-lang="fr" class="on">FR</button>
+        <span>/</span>
+        <button data-lang="en">EN</button>
+      </span>
     </div>
-  </footer>
-  <script src="assets/script.js"></script>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="term" aria-label="Terminal">
+      <div><span class="p">$</span> <span class="c">whoami</span></div>
+      <div><span class="p">→</span> <span class="m">AI Engineer</span> · <span class="c">racines Data Science</span> · Paris</div>
+      <div><span class="p">$</span> <span class="c">farid --focus</span></div>
+      <div><span class="p">→</span> <span class="c">agents · RAG · évaluation LLM · inference (CUDA/vLLM en cours)</span><span class="caret" aria-hidden="true"></span>
+    </div>
+    <h1 class="h-name"><span class="i18n" data-fr="Salut, moi c'est " data-en="Hi, I'm ">Salut, moi c'est </span><em>Farid.</em></h1>
+    <p class="h-sub i18n" data-fr="Je conçois des systèmes d'IA fiables et souverains, de l'idée au déploiement, avec une base Data Science et une obsession pour les preuves." data-en="I design reliable, sovereign AI systems from idea to deployment, with a Data Science foundation and an obsession with evidence.">Je conçois des systèmes d'IA fiables et souverains, de l'idée au déploiement, avec une base Data Science et une obsession pour les preuves.</p>
+    <a class="btn i18n" href="#projects" data-fr="Voir mes projets →" data-en="See my projects →">Voir mes projets →</a>
+  </div>
+</header>
+
+<section class="sec" id="what">
+  <div class="wrap">
+    <div class="k i18n" data-fr="Ce que je fais" data-en="What I do">Ce que je fais</div>
+    <h2 class="i18n" data-fr="Rigoureux, mesurable, en production." data-en="Rigorous, measurable, in production.">Rigoureux, mesurable, en production.</h2>
+    <div class="cards">
+      <div class="card" data-reveal style="--d:.0s"><h3 class="i18n" data-fr="RAG &amp; retrieval" data-en="RAG &amp; retrieval">RAG &amp; retrieval</h3><p class="i18n" data-fr="Bases de connaissances from scratch, hybrid, rerankeurs LLM." data-en="Knowledge bases built from scratch, hybrid retrieval, LLM rerankers.">Bases de connaissances from scratch, hybrid, rerankeurs LLM.</p><div class="mini"><span>pgvector</span><span>FAISS</span><span>MCP</span></div></div>
+      <div class="card" data-reveal style="--d:.05s"><h3 class="i18n" data-fr="Agents &amp; MCP" data-en="Agents &amp; MCP">Agents &amp; MCP</h3><p class="i18n" data-fr="Orchestration multi-agents, supervisor et sous-graphes." data-en="Multi-agent orchestration, a supervisor with sub-graphs.">Orchestration multi-agents, supervisor et sous-graphes.</p><div class="mini"><span>LangGraph</span><span>LangChain</span></div></div>
+      <div class="card" data-reveal style="--d:.1s"><h3 class="i18n" data-fr="Évaluation &amp; LLMOps" data-en="Evaluation &amp; LLMOps">Évaluation &amp; LLMOps</h3><p class="i18n" data-fr="LLM-as-judge, RAGAS, détection de dérive, guardrails." data-en="LLM-as-judge, RAGAS, drift detection, guardrails.">LLM-as-judge, RAGAS, détection de dérive, guardrails.</p><div class="mini"><span>LangFuse</span><span>MLflow</span><span>RAGAS</span></div></div>
+      <div class="card" data-reveal style="--d:.15s"><h3 class="i18n" data-fr="ML Engineering" data-en="ML Engineering">ML Engineering</h3><p class="i18n" data-fr="Inférence LLM locale et serveur, et j'apprends CUDA ainsi que vLLM." data-en="Local and server LLM inference; I'm learning CUDA and vLLM.">Inférence LLM locale et serveur, et j'apprends CUDA ainsi que vLLM.</p><div class="mini"><span>Ollama</span><span>CUDA</span><span>vLLM</span></div></div>
+      <div class="card research" data-reveal style="--d:.2s"><h3 class="i18n" data-fr="Mes intérêts de recherche" data-en="My research interests">Mes intérêts de recherche</h3><p class="i18n" data-fr="AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages." data-en="AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages.">AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages.</p><div class="mini"><span>Vision</span><span>VLA</span><span>NLP</span></div></div>
+    </div>
+
+    <div class="toolbox">
+      <div class="k i18n" data-fr="Toolbox" data-en="Toolbox">Toolbox</div>
+      <div class="grp"><div class="lab i18n" data-fr="LLM &amp; Agents" data-en="LLM &amp; Agents">LLM &amp; Agents</div><span class="pill">LangGraph</span><span class="pill">LangChain</span><span class="pill">MCP</span><span class="pill">Ollama</span><span class="pill">vLLM</span><span class="pill">FAISS</span></div>
+      <div class="grp"><div class="lab i18n" data-fr="Évaluation &amp; LLMOps" data-en="Evaluation &amp; LLMOps">Évaluation &amp; LLMOps</div><span class="pill">LangFuse</span><span class="pill">LLM-as-Judge</span><span class="pill">RAGAS</span><span class="pill">MLflow</span><span class="pill">Monitoring</span></div>
+      <div class="grp"><div class="lab i18n" data-fr="Cloud &amp; Infra" data-en="Cloud &amp; Infra">Cloud &amp; Infra</div><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">GCP</span><span class="pill">AWS</span><span class="pill">FastAPI</span><span class="pill">CI/CD</span></div>
+      <div class="grp"><div class="lab i18n" data-fr="Data &amp; Stockage" data-en="Data &amp; Storage">Data &amp; Stockage</div><span class="pill">PostgreSQL</span><span class="pill">BigQuery</span><span class="pill">Weaviate</span><span class="pill">pgvector</span><span class="pill">Redis</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="projects">
+  <div class="wrap">
+    <div class="k i18n" data-fr="Projets" data-en="Projects">Projets</div>
+    <h2 class="i18n" data-fr="Mes derniers projets." data-en="My latest projects.">Mes derniers projets.</h2>
+    <div class="railh"><span class="rail-hint i18n" data-fr="← faites défiler →" data-en="← scroll →">← faites défiler →</span><div class="arrows"><button class="arrow" data-arrow="-1" aria-label="Précédent">‹</button><button class="arrow" data-arrow="1" aria-label="Suivant">›</button></div></div>
+    <div class="rail" id="rail">
+      <div class="pcard"><h3>Knowbase</h3><div class="role i18n" data-fr="RAG from scratch" data-en="RAG from scratch">RAG from scratch</div><blockquote class="i18n" data-fr="« Base de connaissances RAG sur le corpus FastAPI, retrieval hybride avec rerankeur, MRR 0.90. »" data-en="« A from-scratch RAG knowledge base on the FastAPI corpus, hybrid retrieval with an LLM reranker, MRR 0.90. »">« Base de connaissances RAG sur le corpus FastAPI, retrieval hybride avec rerankeur, MRR 0.90. »</blockquote><div class="tags"><span>Python</span><span>pgvector</span><span>MCP</span><span>RAG</span></div><a class="lnk i18n" href="https://github.com/faridgnank02/cerebras_knowledge_base" target="_blank" rel="noopener" data-fr="GitHub →" data-en="GitHub →">GitHub →</a></div>
+      <div class="pcard"><h3>Voice Clone Consent Gate</h3><div class="role i18n" data-fr="Voice AI éthique" data-en="Ethical voice AI">Voice AI éthique</div><blockquote class="i18n" data-fr="« Consentement éthique pour le clonage vocal via MCP, privacy-first et multilingue. »" data-en="« An ethical consent gate for voice cloning via MCP, privacy-first and multilingual. »">« Consentement éthique pour le clonage vocal via MCP, privacy-first et multilingue. »</blockquote><div class="tags"><span>XTTS v2</span><span>Whisper</span><span>Gradio</span></div><a class="lnk" href="https://github.com/faridgnank02/voice-cloning" target="_blank" rel="noopener">GitHub →</a></div>
+      <div class="pcard"><h3>PPD2 AI Platform</h3><div class="role i18n" data-fr="RAG agentique" data-en="Agentic RAG">RAG agentique</div><blockquote class="i18n" data-fr="« Analyse de projets internationaux de développement, pipeline AdaptiveRouter. »" data-en="« Analysis of international development projects, AdaptiveRouter pipeline. »">« Analyse de projets internationaux de développement, pipeline AdaptiveRouter. »</blockquote><div class="tags"><span>FastAPI</span><span>FAISS</span><span>GPT-4o</span></div><a class="lnk" href="https://github.com/faridgnank02" target="_blank" rel="noopener">GitHub →</a></div>
+      <div class="pcard"><h3>Monitor Agent</h3><div class="role i18n" data-fr="Agents" data-en="Agents">Agents</div><blockquote class="i18n" data-fr="« Télémétrie multi-agents et triage d'incidents, human-in-the-loop. »" data-en="« Multi-agent telemetry and incident triage, human-in-the-loop. »">« Télémétrie multi-agents et triage d'incidents, human-in-the-loop. »</blockquote><div class="tags"><span>LangGraph</span><span>MCP</span><span>FastAPI</span></div><a class="lnk" href="https://github.com/faridgnank02/website-monitoring-agent" target="_blank" rel="noopener">GitHub →</a></div>
+      <div class="pcard"><h3>Video Intelligence</h3><div class="role i18n" data-fr="Video AI" data-en="Video AI">Video AI</div><blockquote class="i18n" data-fr="« Pipelines GCP Video et LLM en rapports structurés, routage optimisé coût. »" data-en="« GCP Video and LLM pipelines into structured reports, cost-aware routing. »">« Pipelines GCP Video et LLM en rapports structurés, routage optimisé coût. »</blockquote><div class="tags"><span>yt-dlp</span><span>Whisper</span><span>Ollama</span></div><a class="lnk" href="https://github.com/faridgnank02/video-summarizer" target="_blank" rel="noopener">GitHub →</a></div>
+      <div class="pcard"><h3>Text-to-SQL multilingue</h3><div class="role i18n" data-fr="NL vers SQL" data-en="NL to SQL">NL vers SQL</div><blockquote class="i18n" data-fr="« Requêtes naturelles en plusieurs langues via LangGraph, anti-injection, suivi MLflow. »" data-en="« Natural-language queries in several languages via LangGraph, anti-injection, MLflow tracking. »">« Requêtes naturelles en plusieurs langues via LangGraph, anti-injection, suivi MLflow. »</blockquote><div class="tags"><span>LangGraph</span><span>RAG</span><span>MLflow</span></div><a class="lnk" href="https://github.com/faridgnank02/multilingual-text-2-sql" target="_blank" rel="noopener">GitHub →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="parcours">
+  <div class="wrap">
+    <div class="k i18n" data-fr="Parcours" data-en="Journey">Parcours</div>
+    <h2 class="i18n" data-fr="De la Data à l'ingénierie d'IA." data-en="From data to AI engineering.">De la Data à l'ingénierie d'IA.</h2>
+    <div class="twocol">
+      <div class="col"><h3 class="i18n" data-fr="Expérience" data-en="Experience">Expérience</h3>
+        <div class="tli" data-reveal><b class="i18n" data-fr="AI Engineer · DiGreen Advisory" data-en="AI Engineer · DiGreen Advisory">AI Engineer · DiGreen Advisory</b><span class="d i18n" data-fr="2025 à aujourd'hui" data-en="2025 to today">2025 à aujourd'hui</span><p class="i18n" data-fr="Solutions GenAI de production, agents LangGraph, souveraineté et évaluation continue." data-en="Production GenAI solutions, LangGraph agents, sovereignty and continuous evaluation.">Solutions GenAI de production, agents LangGraph, souveraineté et évaluation continue.</p></div>
+        <div class="tli" data-reveal style="--d:.05s"><b class="i18n" data-fr="Freelance AI Developer" data-en="Freelance AI Developer">Freelance AI Developer</b><span class="d i18n" data-fr="2025 à aujourd'hui" data-en="2025 to today">2025 à aujourd'hui</span><p class="i18n" data-fr="Agents et RAG bout en bout pour des clients, ateliers FR et EN." data-en="End-to-end agents and RAG for clients, workshops in FR and EN.">Agents et RAG bout en bout pour des clients, ateliers FR et EN.</p></div>
+        <div class="tli" data-reveal style="--d:.1s"><b class="i18n" data-fr="Data Scientist · Sogeti (Capgemini)" data-en="Data Scientist · Sogeti (Capgemini)">Data Scientist · Sogeti (Capgemini)</b><span class="d i18n" data-fr="2023 à 2024" data-en="2023 to 2024">2023 à 2024</span><p class="i18n" data-fr="Recommandation hybride Content-Based et RAG, mise en place d'une suite d'évaluation, pipeline MLOps." data-en="Hybrid Content-Based and RAG recommendation, an evaluation suite, MLOps pipeline.">Recommandation hybride Content-Based et RAG, mise en place d'une suite d'évaluation, pipeline MLOps.</p></div>
+      </div>
+      <div class="col"><h3 class="i18n" data-fr="Formation" data-en="Education">Formation</h3>
+        <div class="tli" data-reveal><b class="i18n" data-fr="Diplôme d'ingénieur · CY Tech (EISTI)" data-en="Engineering degree · CY Tech (EISTI)">Diplôme d'ingénieur · CY Tech (EISTI)</b><span class="d i18n" data-fr="Mathématiques appliquées, spécialité IA" data-en="Applied Mathematics, AI track">Mathématiques appliquées, spécialité IA</span><p class="i18n" data-fr="2021 à 2024." data-en="2021 to 2024.">2021 à 2024.</p></div>
+        <div class="tli" data-reveal style="--d:.05s"><b class="i18n" data-fr="Certifications" data-en="Certifications">Certifications</b><p class="i18n" data-fr="TOEIC, Deep Learning Specialization, PyTorch." data-en="TOEIC, Deep Learning Specialization, PyTorch.">TOEIC, Deep Learning Specialization, PyTorch.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec human">
+  <div class="wrap">
+    <div class="k i18n" data-fr="Au-delà du code" data-en="Beyond code">Au-delà du code</div>
+    <h2 class="i18n" data-fr="Le reste de qui je suis." data-en="The rest of who I am.">Le reste de qui je suis.</h2>
+    <div class="cards">
+      <div class="card" data-reveal><h3 class="i18n" data-fr="Anime" data-en="Anime">Anime</h3><p class="i18n" data-fr="Des récits qui pensent le monde." data-en="Stories that think about the world.">Des récits qui pensent le monde.</p></div>
+      <div class="card" data-reveal style="--d:.05s"><h3 class="i18n" data-fr="Philosophie" data-en="Philosophy">Philosophie</h3><p class="i18n" data-fr="Questions avant réponses." data-en="Questions before answers.">Questions avant réponses.</p></div>
+      <div class="card" data-reveal style="--d:.1s"><h3 class="i18n" data-fr="Littérature" data-en="Literature">Littérature</h3><p class="i18n" data-fr="La langue comme matière." data-en="Language as material.">La langue comme matière.</p></div>
+      <div class="card" data-reveal style="--d:.15s"><h3 class="i18n" data-fr="Maths" data-en="Maths">Maths</h3><p class="i18n" data-fr="Le langage des preuves." data-en="The language of proofs.">Le langage des preuves.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="k i18n" data-fr="Comment me contacter" data-en="How to contact me">Comment me contacter</div>
+    <div class="contact">
+      <div>
+        <div class="big i18n" data-fr="Envie de travailler sur un projet d'IA ?" data-en="Want to work on an AI project?">Envie de travailler sur un projet d'IA ?</div>
+        <p class="i18n" data-fr="Disponible pour des projets et des collaborations, et toujours content d'être contacté." data-en="Available for projects and collaborations, always happy to be reached out.">Disponible pour des projets et des collaborations, et toujours content d'être contacté.</p>
+      </div>
+      <div class="cbtns">
+        <a class="cbtn" href="mailto:mohamedgnank@gmail.com">Email</a>
+        <a class="cbtn" href="https://github.com/faridgnank02" target="_blank" rel="noopener">GitHub</a>
+        <a class="cbtn" href="https://linkedin.com/in/farid-gnankambary-a617821b2/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><span>© 2026 Farid GNANKAMBARY · fr_trenton02</span><span><a class="footlink" href="#top">Back to top ↑</a></span></footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
