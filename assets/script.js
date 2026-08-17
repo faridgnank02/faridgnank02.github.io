@@ -30,20 +30,38 @@
     applyLang(getStoredLang());
   }
 
-  // Terminal typewriter
-  function typeTerminal() {
-    var lines = document.querySelectorAll('.term > div');
-    if (!lines.length) return;
-    lines.forEach(function (line) { line.style.opacity = '0.35'; });
-    var i = 0;
-    function show() {
-      if (i < lines.length) {
-        lines[i].style.opacity = '1';
-        i++;
-        setTimeout(show, 320);
-      }
+  // Rotating typewriter
+  function initRotator() {
+    var el = document.getElementById('rotator');
+    if (!el) return;
+    var words = ['AI Engineer / Data Scientist', 'agentic systems', 'RAG pipelines', 'ML models'];
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { el.textContent = words[0]; return; }
+    var w = 0, c = 0, deleting = false;
+    function tick() {
+      var word = words[w];
+      el.textContent = word.slice(0, c);
+      if (!deleting && c < word.length) { c++; setTimeout(tick, 70); }
+      else if (!deleting && c === word.length) { deleting = true; setTimeout(tick, 1400); }
+      else if (deleting && c > 0) { c--; setTimeout(tick, 35); }
+      else { deleting = false; w = (w + 1) % words.length; setTimeout(tick, 250); }
     }
-    show();
+    tick();
+  }
+
+  // Magnetic CTA
+  function initMagnetic() {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    document.querySelectorAll('.magnetic').forEach(function (btn) {
+      btn.addEventListener('mousemove', function (e) {
+        var r = btn.getBoundingClientRect();
+        var x = e.clientX - r.left - r.width / 2;
+        var y = e.clientY - r.top - r.height / 2;
+        btn.style.transform = 'translate(' + (x * 0.15) + 'px,' + (y * 0.15) + 'px)';
+      });
+      btn.addEventListener('mouseleave', function () { btn.style.transform = ''; });
+    });
   }
 
   // Reveal on scroll
@@ -97,7 +115,8 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     initLang();
-    typeTerminal();
+    initRotator();
+    initMagnetic();
     initReveal();
     initSpy();
     initRail();
