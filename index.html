@@ -25,9 +25,9 @@
         <a href="#contact"><span class="i18n" data-en="Contact" data-fr="Contact">Contact</span></a>
       </span>
       <span class="lang" role="group" aria-label="Language">
-        <button data-lang="en" class="on">EN</button>
+        <button data-lang="en" class="on" aria-pressed="true">EN</button>
         <span>/</span>
-        <button data-lang="fr">FR</button>
+        <button data-lang="fr" aria-pressed="false">FR</button>
       </span>
     </div>
   </div>
@@ -90,9 +90,9 @@
 
 <section class="sec" id="projects">
   <div class="wrap">
-    <div class="k i18n" data-fr="Projets" data-en="Projects">Projets</div>
-    <h2 class="i18n" data-fr="Mes derniers projets." data-en="My latest projects.">Mes derniers projets.</h2>
-    <div class="railh"><span class="rail-hint i18n" data-fr="← faites défiler →" data-en="← scroll →">← faites défiler →</span><div class="arrows"><button class="arrow" data-arrow="-1" aria-label="Précédent">‹</button><button class="arrow" data-arrow="1" aria-label="Suivant">›</button></div></div>
+    <div class="k i18n" data-en="Projects" data-fr="Projets">Projects</div>
+    <h2 class="i18n" data-en="My latest projects." data-fr="Mes derniers projets.">My latest projects.</h2>
+    <div class="railh"><span class="rail-hint i18n" data-fr="← faites défiler →" data-en="← scroll →">← faites défiler →</span><div class="arrows"><button class="arrow" data-arrow="-1" aria-label="Previous">‹</button><button class="arrow" data-arrow="1" aria-label="Next">›</button></div></div>
     <div class="rail" id="rail">
   <div class="pcard featured" data-reveal>
     <h3>Rebuilding the Cerebras Knowledge Base</h3>
@@ -216,7 +216,7 @@
 
 <footer class="footer"><span>© 2026 Farid GNANKAMBARY · fr_trenton02</span><span><a class="footlink" href="#top">Back to top ↑</a></span></footer>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js" integrity="sha384-NNQgBjjuhtXzPmmy4gurS5X7P4uTt1DThyevz4Ua0IVK5+kazYQI1W27JHjbbxQz" crossorigin="anonymous"></script>
 <script src="assets/blog.js"></script>
 <script src="assets/script.js"></script>
 </body>

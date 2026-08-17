@@ -2,7 +2,7 @@
   --bg:#f7f7f5; --paper:#ffffff; --line:#e4e4df;
   --ink:#1a1a1a; --muted:#6b6b64;
   --accent:#0f766e; --accent2:#4f46e5; --accent-bg:#eef2ff;
-  --term-bg:#111113; --term-line:#8b8b90; --term-cmd:#22d3ee; --term-out:#a78bfa; --term-in:#e5e7eb;
+  --term-bg:#111113;
   --radius:14px; --radius-lg:16px;
   --shadow:0 1px 2px rgba(20,20,20,.05);
   --font:Inter,-apple-system,"Segoe UI",system-ui,sans-serif;
@@ -55,17 +55,6 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;margin
 .card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(20,20,20,.06)}
 .card h3{font-size:1.02rem;font-weight:700;margin-bottom:6px}
 .card p{color:var(--muted);font-size:14px}
-.mini{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}
-.mini span{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:6px;padding:2px 7px;color:var(--muted)}
-.card.research{border-color:#c7d2fe;background:linear-gradient(180deg,#fff,var(--accent-bg))}
-.card.research h3{color:var(--accent2)}
-
-/* Toolbox */
-.toolbox{margin-top:34px}
-.grp{margin-bottom:18px}
-.grp .lab{font-size:13px;font-weight:700;margin-bottom:8px}
-.pill{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;margin:0 6px 6px 0;color:#3a3a36}
-
 /* Projects rail */
 .railh{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
 .arrows{display:flex;gap:8px}
@@ -77,7 +66,6 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;margin
 .pcard:hover{transform:translateY(-2px)}
 .pcard h3{font-size:1.15rem;font-weight:700}
 .pcard .role{color:var(--accent);font-size:12px;margin:2px 0 12px}
-.pcard blockquote{color:var(--muted);font-style:italic;font-size:14px;border-left:2px solid var(--line);padding-left:12px;flex:1}
 .pcard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 .pcard .tags span{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--muted)}
 .pcard .lnk{margin-top:12px;color:var(--accent);font-weight:600;font-size:13px}
@@ -96,11 +84,6 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;margin
 .human .cards .card{text-align:center}
 
 /* Contact */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
-@media(max-width:820px){.contact{grid-template-columns:1fr}}
-.contact .big{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:700;letter-spacing:-.01em;line-height:1.2}
-.contact p{color:var(--muted);margin-top:10px}
-.cbtns{display:flex;flex-wrap:wrap;gap:10px}
 .cbtn{border:1px solid var(--line);background:#fff;border-radius:12px;padding:14px 18px;color:var(--ink);font-weight:600;font-size:14px;display:inline-flex;gap:8px;align-items:center}
 .cbtn:hover{box-shadow:var(--shadow)}
 .cbtn{transition:box-shadow .15s ease}
@@ -134,7 +117,7 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;margin
 @keyframes shimmer{to{background-position:200% 0}}
 .rotator-wrap{margin-top:12px;font-size:1.15rem;color:var(--ink);font-weight:600;min-height:1.6em}
 .rotator{color:var(--accent)}
-.rotator .cursor{display:inline-block;width:2px;height:1.05em;background:var(--accent);
+.rotator-wrap .cursor{display:inline-block;width:2px;height:1.05em;background:var(--accent);
   vertical-align:-2px;margin-left:2px;animation:blink 1s steps(1) infinite}
 
 /* Personality chips */
@@ -211,7 +194,7 @@ h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;margin
 @media(prefers-reduced-motion:reduce){
   .hero-aurora{animation:none}
   .h-name em{animation:none}
-  .rotator .cursor{animation:none}
+  .rotator-wrap .cursor{animation:none}
 }
 
 /* Reveal */
