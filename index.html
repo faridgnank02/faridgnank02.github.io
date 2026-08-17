@@ -60,23 +60,30 @@
 
 <section class="sec" id="what">
   <div class="wrap">
-    <div class="k i18n" data-fr="Ce que je fais" data-en="What I do">Ce que je fais</div>
-    <h2 class="i18n" data-fr="Rigoureux, mesurable, en production." data-en="Rigorous, measurable, in production.">Rigoureux, mesurable, en production.</h2>
-    <div class="cards">
-      <div class="card" data-reveal style="--d:.0s"><h3 class="i18n" data-fr="RAG &amp; retrieval" data-en="RAG &amp; retrieval">RAG &amp; retrieval</h3><p class="i18n" data-fr="Bases de connaissances from scratch, hybrid, rerankeurs LLM." data-en="Knowledge bases built from scratch, hybrid retrieval, LLM rerankers.">Bases de connaissances from scratch, hybrid, rerankeurs LLM.</p><div class="mini"><span>pgvector</span><span>FAISS</span><span>MCP</span></div></div>
-      <div class="card" data-reveal style="--d:.05s"><h3 class="i18n" data-fr="Agents &amp; MCP" data-en="Agents &amp; MCP">Agents &amp; MCP</h3><p class="i18n" data-fr="Orchestration multi-agents, supervisor et sous-graphes." data-en="Multi-agent orchestration, a supervisor with sub-graphs.">Orchestration multi-agents, supervisor et sous-graphes.</p><div class="mini"><span>LangGraph</span><span>LangChain</span></div></div>
-      <div class="card" data-reveal style="--d:.1s"><h3 class="i18n" data-fr="Évaluation &amp; LLMOps" data-en="Evaluation &amp; LLMOps">Évaluation &amp; LLMOps</h3><p class="i18n" data-fr="LLM-as-judge, RAGAS, détection de dérive, guardrails." data-en="LLM-as-judge, RAGAS, drift detection, guardrails.">LLM-as-judge, RAGAS, détection de dérive, guardrails.</p><div class="mini"><span>LangFuse</span><span>MLflow</span><span>RAGAS</span></div></div>
-      <div class="card" data-reveal style="--d:.15s"><h3 class="i18n" data-fr="ML Engineering" data-en="ML Engineering">ML Engineering</h3><p class="i18n" data-fr="Inférence LLM locale et serveur, et j'apprends CUDA ainsi que vLLM." data-en="Local and server LLM inference; I'm learning CUDA and vLLM.">Inférence LLM locale et serveur, et j'apprends CUDA ainsi que vLLM.</p><div class="mini"><span>Ollama</span><span>CUDA</span><span>vLLM</span></div></div>
-      <div class="card research" data-reveal style="--d:.2s"><h3 class="i18n" data-fr="Mes intérêts de recherche" data-en="My research interests">Mes intérêts de recherche</h3><p class="i18n" data-fr="AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages." data-en="AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages.">AI for Robotics, Multimodal AI, VLM/VLAs, low-resource languages.</p><div class="mini"><span>Vision</span><span>VLA</span><span>NLP</span></div></div>
+    <div class="k i18n" data-en="What I do" data-fr="Ce que je fais">What I do</div>
+    <h2 class="i18n" data-en="AI Engineer / Data Scientist." data-fr="AI Engineer / Data Scientist.">AI Engineer / Data Scientist.</h2>
+    <div class="idcards">
+      <div class="idcard" data-reveal>
+        <h3>AI Engineer</h3>
+        <p class="i18n" data-en="I design agentic systems and RAG that run in production." data-fr="Je conçois des systèmes agentiques et du RAG en production.">I design agentic systems and RAG that run in production.</p>
+        <div class="tools"><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>RAG</span><span>LangFuse</span><span>FastAPI</span></div>
+      </div>
+      <div class="idcard" data-reveal style="--d:.05s">
+        <h3>Data Scientist</h3>
+        <p class="i18n" data-en="Classic ML, NLP and anomaly detection on real datasets." data-fr="ML classique, NLP et détection d'anomalies sur données réelles.">Classic ML, NLP and anomaly detection on real datasets.</p>
+        <div class="tools"><span>PyTorch</span><span>scikit-learn</span><span>XGBoost</span><span>Transformers</span><span>Hugging Face</span></div>
+      </div>
+      <div class="idcard" data-reveal style="--d:.1s">
+        <div class="learn i18n" data-en="Currently learning" data-fr="En apprentissage">Currently learning</div>
+        <h3 class="i18n" data-en="Growing into ML Engineering" data-fr="Vers le ML Engineering">Growing into ML Engineering</h3>
+        <div class="tools"><span>GPU programming</span><span>High-throughput inference</span><span>vLLM</span><span>CUDA</span><span>Model serving</span></div>
+      </div>
     </div>
-
-    <div class="toolbox">
-      <div class="k i18n" data-fr="Toolbox" data-en="Toolbox">Toolbox</div>
-      <div class="grp"><div class="lab i18n" data-fr="LLM &amp; Agents" data-en="LLM &amp; Agents">LLM &amp; Agents</div><span class="pill">LangGraph</span><span class="pill">LangChain</span><span class="pill">MCP</span><span class="pill">Ollama</span><span class="pill">vLLM</span><span class="pill">FAISS</span></div>
-      <div class="grp"><div class="lab i18n" data-fr="Évaluation &amp; LLMOps" data-en="Evaluation &amp; LLMOps">Évaluation &amp; LLMOps</div><span class="pill">LangFuse</span><span class="pill">LLM-as-Judge</span><span class="pill">RAGAS</span><span class="pill">MLflow</span><span class="pill">Monitoring</span></div>
-      <div class="grp"><div class="lab i18n" data-fr="Cloud &amp; Infra" data-en="Cloud &amp; Infra">Cloud &amp; Infra</div><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">GCP</span><span class="pill">AWS</span><span class="pill">FastAPI</span><span class="pill">CI/CD</span></div>
-      <div class="grp"><div class="lab i18n" data-fr="Data &amp; Stockage" data-en="Data &amp; Storage">Data &amp; Stockage</div><span class="pill">PostgreSQL</span><span class="pill">BigQuery</span><span class="pill">Weaviate</span><span class="pill">pgvector</span><span class="pill">Redis</span></div>
+    <div class="toolbelt">
+      <span class="lab i18n" data-en="Also work with" data-fr="J'utilise aussi">Also work with</span>
+      <span class="t">Docker</span><span class="t">Kubernetes</span><span class="t">AWS</span><span class="t">GCP</span><span class="t">MLflow</span><span class="t">PostgreSQL</span><span class="t">FAISS</span><span class="t">Python</span>
     </div>
+    <p class="research-line"><b class="i18n" data-en="Research interests:" data-fr="Intérêts de recherche :">Research interests:</b> <span class="i18n" data-en="AI for Robotics · Multimodal AI · VLM/VLAs · low-resource languages" data-fr="IA pour la robotique · IA multimodale · VLM/VLAs · langues peu dotées">AI for Robotics · Multimodal AI · VLM/VLAs · low-resource languages</span></p>
   </div>
 </section>
 
