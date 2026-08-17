@@ -120,5 +120,6 @@
     initReveal();
     initSpy();
     initRail();
+    if (window.Blog && window.Blog.renderHome) window.Blog.renderHome('home-posts', 3);
   });
 })();
