@@ -25,6 +25,11 @@ em{font-style:normal}
 .lang{display:inline-flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:600;margin-left:14px}
 .lang button{background:none;border:none;cursor:pointer;color:var(--muted);font:inherit}
 .lang button.on{color:var(--accent)}
+@media(max-width:640px){
+  .site-nav .in{flex-wrap:wrap;gap:6px 0}
+  .nav-links a{margin-left:14px}
+  .lang{margin-left:0}
+}
 
 /* Hero */
 .hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
