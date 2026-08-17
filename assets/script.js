@@ -4,7 +4,7 @@
   var STORAGE_KEY = 'lang';
 
   function getStoredLang() {
-    try { return localStorage.getItem(STORAGE_KEY) || 'fr'; } catch (e) { return 'fr'; }
+    try { return localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { return 'en'; }
   }
 
   function applyLang(lang) {
